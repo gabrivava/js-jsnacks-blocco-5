@@ -50,3 +50,26 @@ console.log(zucchinePiccole);
 //Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 console.log(sommaPeso(zucchineGrandi));
 console.log(sommaPeso(zucchinePiccole));
+
+
+//******** Snack 3:
+//Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC) */
+function returnReverse(string) {
+    return string.split('').reverse().join('');
+}
+console.log(returnReverse('boolean'));
+
+//********* Snack 4:
+//Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
+/* es. [a,b,c], [1,2,3] → [a,1,b,2,c,3]. */
+var array1 = ['a', 'b', 'c', 'd', 'e'];
+var array2 = [1, 2, 3, 4, 5];
+function fondiArray(array1, array2) {
+    var fusione = [];
+    for (var i = 0; i < array1.length; i++) {
+        fusione.push(array1[i]);
+        fusione.push(array2[i]);
+    }
+    return fusione
+}
+console.log(fondiArray(array1, array2));
