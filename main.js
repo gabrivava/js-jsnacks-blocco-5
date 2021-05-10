@@ -73,3 +73,22 @@ function fondiArray(array1, array2) {
     return fusione
 }
 console.log(fondiArray(array1, array2));
+
+
+//**************Snack 5:
+//Scrivi una funzione che accetti tre argomenti:
+//un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
+var a = 2;
+var b = 9;
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function findElements(a, b, array) {
+    var newArray = [];
+    for (var i= 0; i < array.length; i++) {
+        if (array[i] > a && array[i] < b) {
+            newArray.push(array[i])
+        }
+    }
+    return newArray
+}
+console.log(findElements(a, b, array));
+//La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
