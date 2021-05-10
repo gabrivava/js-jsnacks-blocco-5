@@ -80,11 +80,11 @@ console.log(fondiArray(array1, array2));
 //un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
 var a = 2;
 var b = 9;
-var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var array = ['1', 2, 3, 'hfajs', 5, 'adguia', 7, 8, 9, 10];
 function findElements(a, b, array) {
     var newArray = [];
     for (var i= 0; i < array.length; i++) {
-        if (array[i] > a && array[i] < b) {
+        if (i > a && i < b) {
             newArray.push(array[i])
         }
     }
